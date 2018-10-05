@@ -1,0 +1,357 @@
+@media all and (max-width: 1366px){
+	.photo_slider {
+	width: 100%	;
+	max-width: 1366px;
+	}
+
+	.photo_slider img {
+	width: 100%;
+	}
+
+	#timeline {
+		bottom: 10px;
+	}
+}
+
+@media all and (max-width: 1280px){
+	.fleche {
+		display: none
+	}
+
+	.fa-angle-left,.fa-angle-right {
+		bottom: 40%;
+	}
+
+	#conteneur_slider{
+		height: 420px;
+	}
+
+	.photo_slider {
+		width: 100%	;
+		height: 420px;
+	}
+
+	.photo_slider img {
+		width: 100%;
+		height: 420px;
+	}
+
+	#timeline{
+		bottom:0px;
+	}
+
+	.texte_slide{
+		bottom: 350px;
+	}
+
+	.envoyer{
+		width: 35%;
+	}
+
+}
+@media all and (max-width: 1112px){
+	#conteneur_slider{
+		height: 400px;
+	}
+	.photo_slider {
+		width: 100%	;
+		max-width: 1112px;
+	}
+
+	.photo_slider{
+		height: 400px;
+	}
+	
+	.photo_slider img {
+		width: 100%;
+		height: 400px;
+	}
+	#timeline {
+		bottom: 0;
+	}
+}
+
+@media all and (max-width:1024px){
+	#conteneur_slider{
+		height: 400px;
+	}
+	.photo_slider {
+		width: 100%	;
+		max-width: 1024px;
+		height: 400px;
+	}
+
+	.photo_slider img {
+		width: 100%;
+		height: 400px;
+	}
+	#timeline {
+		bottom:0px;
+	}
+
+	.texte_slide{
+		left: 100px;
+	}
+
+	.envoyer{
+		width: 45%;
+	}
+}
+@media all and (max-width:980px){
+	#conteneur_slider {
+	 display: none;
+	 margin-top: 115px;
+	}
+	
+	#menu_fixe ul {
+		width: 30%;
+	}
+
+	#services {
+		flex-direction: column;
+	}
+
+	#listes {
+		max-width: 70%;
+		margin: auto;
+	}
+
+	#fond-bleu {
+		display: none;
+	}
+
+	.envoyer {
+		width: 48%;
+	}
+}
+
+@media all and (max-width: 800px){
+	#menu_fixe ul {
+		width: 40%;
+	}
+	#contact {
+		height: 1060px;
+	}
+	#conteneur_formulaire {
+		bottom: 0px;
+		left: 20px;
+		width: 90%;
+	}
+	.envoyer {
+		width: 20%;
+		padding-left: 25px;
+	}
+}
+
+@media all and (max-width: 700px){
+	#menu_fixe {
+		flex-direction: column;
+		margin: auto;
+		height: 130px;
+	}
+	#menu_fixe ul {
+		width: 40%;		
+		margin: auto;
+		padding-right: 0;	
+	}
+	.logo {
+		width: 40%;
+		height: 60px;
+		margin: auto;
+		padding-left: 0;
+	}
+	.selection_radio label{
+		width: 15%;
+	}
+	.selection_radio label[for=allworks]{
+	left: 20%;
+	}
+	.selection_radio label[for=creative]{
+	left: 35%;
+	}
+	.selection_radio label[for=corporate]{
+	left: 50%;
+	}
+	.selection_radio label[for=portfolio]{
+	left: 65%;
+	}
+	#conteneur_formulaire {
+		left: 15px;
+	}
+}
+@media all and (max-width: 600px){
+	body {
+		width: 100%;
+	}
+
+	#menu_fixe ul {
+		width: 50%;		
+		margin: auto;
+	}
+
+	#conteneur_formulaire {
+	 	left: 10px;
+	}
+
+	.envoyer {
+		padding-left: 15px;
+	}
+}
+@media all and (max-width: 500px){
+	.logo{
+		width: 50%;
+	}
+
+	.envoyer {
+		padding-left: 6px;
+	}
+}
+@media all and (max-width: 414px){
+		body{
+			width: 100%;
+		}
+		.logo{
+			width: 60%;
+		}
+		 #menu_fixe ul{
+		 	width: 70%;
+		 }
+		.ordinateur{
+			display: none;
+		}
+		.ordinateur{
+			display: none;
+		}
+		.selection_radio label{
+			width: 17%;
+		}
+		.selection_radio label[for=allworks]{
+			left: 15%;
+		}
+		.selection_radio label[for=creative]{
+			left: 32%;
+		}
+		.selection_radio label[for=corporate]{
+			left: 49%;
+		}
+		.selection_radio label[for=portfolio]{
+			left: 66%;
+		}
+		.envoyer{
+			width: 25%;
+		}
+	}
+
+@media all and (max-width: 400px){
+	body {
+		width: 100%;
+	}
+
+	#menu_fixe {
+		width: 100%;
+	}
+
+	.logo {
+		width: 50%;
+	}
+
+	#menu_fixe ul {
+		width: 80%;
+	}
+
+	.ordinateur {
+		display: none;
+	}
+
+	.liste_projet {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.selection_radio label {
+		width: 20%;
+	}
+
+	.selection_radio label[for=allworks]{
+		left: 10%;
+	}
+
+	.selection_radio label[for=creative]{
+		left: 30%;
+	}
+
+	.selection_radio label[for=corporate]{
+		left: 50%;
+	}
+
+	.selection_radio label[for=portfolio]{
+		left: 70%;
+	}
+
+	.envoyer{
+		width: 25%;
+	}
+}
+
+@media all and (max-width: 375px){
+	.logo{
+		width: 70%;
+	}
+	.envoyer{
+		width: 28%
+	}
+	#conteneur_formulaire{
+		width: 88%;
+		left: 0;
+	}
+}
+@media all and (max-width: 320px){
+	#menu_fixe {
+		height: 115px;
+		max-width: 320px;
+	}
+
+	#menu_fixe a:hover {
+		padding-top: 5px;
+	}
+
+	.logo {
+		width: 60%;
+		height: 50px;
+	}
+
+	label {
+		font-size: 0.7em;
+	}
+
+	.selection_radio label{
+		width: 25%;
+	}
+
+	.selection_radio label[for=allworks]{
+		left: 5%;
+	}
+
+	.selection_radio label[for=creative]{
+		left: 26%;
+	}
+
+	.selection_radio label[for=corporate]{
+		left: 49%;
+	}
+
+	.selection_radio label[for=portfolio]{
+		left: 73%;
+	}
+
+	#conteneur_formulaire {
+		left: 0;
+		width:280px;
+		
+	}
+	.envoyer {
+		height: 40px;
+		width: 33%;
+		padding-top: 10px;
+	}
+}

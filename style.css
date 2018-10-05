@@ -1,0 +1,517 @@
+/*1-Reglage_16 */
+/*2-Header_46*/ 
+/*3-Photo slider_90*/
+/*4-Texte slider_179*/
+/*5-Nos services_217*/
+/*6-Nos projets_288*/
+/*7-Contact_456*/
+
+
+/*************************************************
+******************REGLAGE PAGE********************
+**************************************************/
+
+body {
+	width: 1400px;
+	max-width: 100%;
+	margin: auto;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('polices/Roboto-Regular-webfont.eot');
+    src: url('polices/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/Roboto-Regular-webfont.woff') format('woff'),
+         url('polices/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('polices/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}	
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('polices/Roboto-Bold-webfont.eot');
+    src: url('polices/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/Roboto-Bold-webfont.woff') format('woff'),
+         url('polices/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('polices/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: bold;
+}
+/*************************************************
+***********************HEADER*********************
+**************************************************/
+
+#menu_fixe {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 110px;
+	z-index: 10;
+	box-shadow: 0px 0px 2px 0px;
+	background-color: white;
+	font-family: 'robotoregular';
+}
+
+#menu_fixe ul {
+	width: 25%;
+	list-style-type: none; /*Enleve les puces*/
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 10%;
+}
+
+.logo {
+	padding-left: 10%;
+	height: 50px;
+}
+
+#menu_fixe a {
+	text-decoration: none; /*Enleve la couleur bleu et le soulignement*/
+	color: black;
+}
+
+#menu_fixe a:hover {
+	border-top: solid 3px rgb(36, 176, 198);/*Couleur bleu clair*/
+	padding-top: 20px; 
+}
+
+/*********************************************
+******************PHOTO SLIDER****************
+**********************************************/
+
+#conteneur_slider {
+	position: relative;
+	padding-top: 105px;
+	overflow: hidden; /*Attention ne pas enlever sinon les images se colle l'une a l'autre*/
+	height: 480px;
+}
+
+.photo_slider {
+	width: 100%;
+	height: 480px;
+}
+
+.photo_slider img {
+	width: 100%;
+}
+
+@keyframes mon_slider { 
+	 0%, 10% {
+        transform: translateX(0%);
+    }
+    40%, 50%, 60%{
+    	transform: translateX(-50%);
+    }
+    90%, 100% {
+        transform: translateX(0%);
+    }
+}
+
+.conteneur_animation {
+	display: flex;
+	width: 200%;
+	animation: mon_slider 30s alternate infinite;
+}
+
+#timeline {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	height: 5px;
+	width: 50%;
+	background-color: rgb(36, 176, 198);/*Couleur bleu clair*/;
+	animation: timeliner 30s  alternate infinite;
+}
+
+@keyframes timeliner {
+	0%,10% {
+        transform: translateX(0px);
+    }
+    40%, 50%, 60% {
+        transform: translateX(-100%);
+    }
+    90%,100% {
+        transform: translateX(0%) 
+    }
+}
+
+.fa-angle-left {
+	position: absolute;
+	bottom: 40%;
+	color: white;
+	background-color: rgba(189, 190, 191,0.5);
+	padding: 10px 10px 10px 40px; 
+	margin: -30px;
+	border-radius: 25px;
+}
+
+.fa-angle-right {
+	position: absolute;
+	bottom: 40%;
+	right: 10px;
+	background-color: rgba(189, 190, 191,0.5);
+	color: white;
+	padding: 10px 35px 10px 10px;
+	margin: -30px;
+	border-radius: 25px;
+}
+
+.bouton p {
+ 	color: white;
+}
+
+.bouton a {
+	text-decoration: none;
+}
+
+/********************************************
+*****************TEXTE SLIDER****************
+*********************************************/
+
+.texte_slide {
+	position: relative;
+	left: 150px;
+	bottom: 380px;
+	width: 50%;
+	color: white;
+	align-items: center;
+}
+
+.couleur {
+	color: rgb(36, 176, 198);/*Couleur bleu clair*/
+}
+
+.texte_slide h1 {
+	font-family: 'robotobold';
+	font-size: 2em;
+}
+
+.texte_slide p {
+	font-family: 'robotoregular';
+}
+
+.bouton {
+	background-color: rgb(36, 176, 198);/*Couleur bleu clair*/
+	border: solid 2px rgb(36, 176, 198);/*Couleur bleu clair*/
+	border-radius: 1px;
+	width:20%;
+	box-shadow: 2px 2px 3px black;
+}
+
+.bouton p {
+	text-align: center;
+}
+
+/********************************************
+*******************NOS SERVICES**************
+*********************************************/
+
+#nos_services { 
+	font-family: 'robotoregular';
+	text-align: center;
+	padding-top: 115px;
+}
+
+/*****************************Partie1-header*****************/
+
+header h1 { /*titre nos services et nos projets*/
+	font-family: "robotobold";
+	font-size: 2em;
+}
+
+hr {
+	display: inline-block;
+	width: 5%;
+	vertical-align: middle;
+}
+
+.trait i {
+	color: rgb(36, 176, 198);/*Couleur bleu clair*/
+	border: solid 6px white;
+}
+/********************Partie2-id-services********************/
+
+#services {
+	display: flex;
+	justify-content: space-around;
+}
+
+#listes {
+	display: block;
+	max-width: 40%;
+	padding: 0;
+}
+
+#listes li {
+	display: flex;
+	justify-content: space-between;
+}
+
+.icone {
+	margin: auto;
+	padding-right: 5%;
+	color: rgb(36, 176, 198);/*Couleur bleu clair*/
+	position: relative;
+}
+
+.liste_texte {
+	text-align: left;
+	margin: auto;
+}
+
+/*Icone fontawesome*/
+.fa-line-chart, .fa-cubes, .fa-pie-chart {
+	border: solid 1px black;
+	width: 79px;
+	height: 60px;
+	border-radius: 40px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.icone .fa-circle {
+	color: rgb(36, 176, 198);/*Couleur bleu clair*/
+	position: absolute;
+	left: 66px;
+	top: 28px;
+	height: 13px;
+	font-size: 1.1em;
+	border: solid 6px white;
+}
+/*****************************************************
+***********************NOS PROJETS********************
+******************************************************/
+
+#nos_projets {
+	background-color: rgb(225, 226, 228); /*Couleur gris clair*/
+	font-family: 'robotoregular';
+	padding-top: 115px;
+	padding-bottom: 115px;
+}
+
+/*******************Partie1-header*******************/
+
+#nos_projets header {
+	text-align: center;
+	position: relative;
+}
+
+/*Icone fontawesome*/
+#nos_projets header i {
+	color: rgb(36, 176, 198);/*Couleur bleu clair*/
+	border: solid 3px white;
+	border-radius: 50px;
+}
+
+/*******************Partie2-projets*******************/ 
+
+#projets {
+	position: relative;
+}
+
+/*********Reglage bouton radio*********/ 
+
+/*Retire la checkbox*/
+.selection_radio input[type=radio] {
+	display: none;
+}
+/*Permet le changement de label*/
+input[type=radio]:not(:checked) ~ label ~ .liste_projet {
+	display: none;
+}
+
+/*Regler la barre de selection*/
+.selection_radio label {
+	position: absolute;
+	top: 0;
+	width: 10%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+}
+
+/*Positionnement de la barre de selection*/
+.selection_radio label[for=allworks] {
+	left: 30%;
+	background-color: rgb(36, 176, 198);/*Couleur bleu clair*/;
+	margin-bottom: -10px;
+	border-bottom: solid 4px rgb(49, 142, 172);/*Couleur bleu foncé*/;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.selection_radio label[for=creative] {
+	left: 40%;
+	background-color: rgb(183, 182, 182);/*Couleur gris foncé*/;
+	border-bottom: solid 4px rgb(183, 182, 182);/*Couleur gris foncé*/;
+}
+
+.selection_radio label[for=corporate] {
+	left: 50%;
+	background-color: rgb(183, 182, 182);/*Couleur gris foncé*/;
+	border-bottom: solid 4px rgb(183, 182, 182);/*Couleur gris foncé*/;
+}
+
+.selection_radio label[for=portfolio] {
+	left: 60%;
+	background-color: rgb(183, 182, 182);/*Couleur gris foncé*/;
+	border-bottom: solid 4px rgb(183, 182, 182);/*Couleur gris foncé*/;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#projets label:hover {
+	background-color: rgb(36, 176, 198);/*Couleur bleu clair*/
+	border-bottom: solid 4px rgb(49, 142, 172);/*Couleur bleu foncé*/;
+}
+
+/*Icone fontawesome:fleche*/
+.fa-caret-down {
+	position: absolute;
+	top: 95%;
+	left: 47%;
+	color: rgb(49, 142, 172);/*Couleur bleu clair*/;
+}
+
+/*Photos*/
+.liste_projet {
+	max-width: 99.9%;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.photo_portfolio {
+	width: 100%;
+}
+
+/*Mise en place animation descriptif image*/
+.liste_projet li {
+	position: relative;
+	width: 280px;
+	margin-top: 100px;
+	overflow: hidden;
+}
+
+.description_image{
+	position: absolute;
+	top: 300px;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.5);
+	/*apparait rapidement et ralenti a la fin*/
+	-webkit-transition: all .9s ease;
+	-moz-transition: all .9s ease;
+	-o-transition: all .9s ease;
+	/*Demare au bout de 0,1sec*/
+	-webkit-transition-delay: .1s;
+	-moz-transition-delay: .1s;
+	-o-transition-delay: .1s;
+}
+
+.description_image p {
+	color: white;
+	padding-left: 8px;
+}
+
+.description_image h4 {
+	color: white;
+	padding-left: 8px;
+}
+
+.liste_projet li:hover .description_image,
+.liste_projet li:active .description_image {
+	top: 40%;
+	opacity: 1;
+}
+
+/*Icone Oeil*/
+.icone_oeil {
+	position: absolute;
+	width: 100%; 
+}
+
+.description_image i {
+	position: absolute;
+	top: -20px; 
+	left: 80%; 
+	background: rgb(36, 176, 198);/*Couleur bleu clair*/;
+	width: 40px; 
+	height: 40px;
+	border-radius: 50%; 
+	border: solid white 2px; 
+	line-height: 40px; 
+	color: white;
+}
+
+/****************************************************************
+******************************CONTACT****************************
+*****************************************************************/	
+
+/*Carte*/
+#contact {
+	position: relative;
+	font-family: 'robotoregular';
+	background-color: rgb(225, 226, 228); /*Couleur gris clair*/
+}
+
+iframe {
+	height: 600px;
+	width: 100%;
+	z-index: 1;
+}
+
+#fond-bleu {
+	position: absolute;
+	background-color: rgba(36, 176, 198,0.4);/*Couleur bleu clair*/;
+	width: 100%;
+	height: 600px;
+	bottom: 4px;
+	z-index: 2;
+}
+
+#conteneur_formulaire {
+	background-color: rgba(249, 234, 234, 0.7);/*Couleur blanc opaque*/;
+	position: absolute;
+	bottom: 15%;
+	left: 75%;
+	z-index: 3;
+	width: 20%;
+	text-align: left;
+	padding: 10px 20px 15px 20px;
+}
+
+input {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	width: 95%;
+}
+
+textarea {
+	width: 95%;
+	height: 130px;
+	margin-bottom: 15px;
+}
+
+.envoyer {
+	width: 32%;
+	background-color: rgb(36, 176, 198);/*Couleur bleu clair*/;
+	color: white;
+	height: 30px;
+	padding-top: 5px;
+}
+
+footer {
+	text-align: center;
+	font-family: "robotoregular";
+	font-size: 0.8em;
+}
